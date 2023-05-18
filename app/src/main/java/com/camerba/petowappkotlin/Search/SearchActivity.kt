@@ -1,11 +1,12 @@
-package com.camerba.petowappkotlin
+package com.camerba.petowappkotlin.Search
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.camerba.petowappkotlin.R
 
-class ProfileActivity : AppCompatActivity() {
+class SearchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
+        setContentView(R.layout.activity_search)
     }
 }
