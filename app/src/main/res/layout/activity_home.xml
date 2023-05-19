@@ -91,7 +91,9 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:padding="15dp"
+            android:background="@color/purple_200"
             app:bubbletab_menuResource="@menu/list"
+            app:bubbletab_icon_size="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">

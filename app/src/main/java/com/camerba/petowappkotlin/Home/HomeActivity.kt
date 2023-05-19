@@ -11,13 +11,10 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-         setupNavigation()
+
     }
 
-       fun setupNavigation(){
 
-           BottomnavigationViewHelper.setupNavigation(context = this, bottomNavigationView =)
-       }
 
 
 }
