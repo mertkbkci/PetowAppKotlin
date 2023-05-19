@@ -13,12 +13,12 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-setupNavigation()
+setupViewPager()
     }
 
-fun setupNavigation(){
+fun setupViewPager(){
 
-    ListHelper.setupNavigation(this , bubbleTabBar)
+    ListHelper.setupNavigation(context = this, bubbleTabBar = BubbleTabBar(this))
 }
 
 
