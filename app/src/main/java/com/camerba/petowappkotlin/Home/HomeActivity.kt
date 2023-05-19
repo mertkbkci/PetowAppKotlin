@@ -5,16 +5,19 @@ import android.os.Bundle
 import com.camerba.petowappkotlin.R
 import com.camerba.petowappkotlin.utils.BottomnavigationViewHelper
 
+
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        setupNavigationView()
+         setupNavigation()
     }
-        fun setupNavigationView(){
 
-            BottomnavigationViewHelper.setupBottomNavigationView()
-}
+       fun setupNavigation(){
+
+           BottomnavigationViewHelper.setupNavigation(context = this, bottomNavigationView =)
+       }
+
 
 }

@@ -85,23 +85,23 @@
             </com.google.android.material.appbar.CollapsingToolbarLayout>
         </com.google.android.material.appbar.AppBarLayout>
 
-        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
-            android:id="@+id/bottomNavigationView"
+
+        <io.ak1.BubbleTabBar
+            android:id="@+id/bubbleTabBar"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"
+            android:layout_height="0dp"
+            android:padding="15dp"
+            app:bubbletab_menuResource="@menu/list"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/bottom_navigation_menu">
+            app:layout_constraintStart_toStartOf="parent">
 
-        </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+        </io.ak1.BubbleTabBar>
 
         <androidx.viewpager2.widget.ViewPager2
             android:layout_width="match_parent"
-            android:layout_height="590dp"
-            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            android:layout_height="585dp"
+            app:layout_constraintBottom_toTopOf="@+id/bubbleTabBar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
