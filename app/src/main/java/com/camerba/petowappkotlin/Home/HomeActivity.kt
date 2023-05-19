@@ -3,7 +3,6 @@ package com.camerba.petowappkotlin.Home
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.camerba.petowappkotlin.R
-import com.camerba.petowappkotlin.utils.BottomnavigationViewHelper
 
 
 class HomeActivity : AppCompatActivity() {
