@@ -1,13 +1,17 @@
 package com.camerba.petowappkotlin.utils
 
-import android.content.Context
-import com.google.android.material.bottomnavigation.BottomNavigationView
+
+import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
 
 class BottomnavigationViewHelper {
 
     companion object {
-        fun setupNavigation(context: Context, bottomNavigationView: BottomNavigationView){
 
+        fun setupBottomNavigationView(bottomNavigationViewEx: BottomNavigationViewEx){
+            bottomNavigationViewEx.enableAnimation(false)
+            bottomNavigationViewEx.enableItemShiftingMode(false)
+            bottomNavigationViewEx.enableShiftingMode(false)
         }
+
     }
 }
