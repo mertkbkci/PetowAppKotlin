@@ -13,7 +13,7 @@ import io.ak1.OnBubbleClickListener
 class ListHelper {
 
     companion object {
-        fun setupNavigation(context: Context, bubbleTabBar: BubbleTabBar) {
+        fun setupNavigationView(context: Context, bubbleTabBar: BubbleTabBar) {
 
             bubbleTabBar.addBubbleListener(object : OnBubbleClickListener {
                 override fun onBubbleClick(id: Int) {

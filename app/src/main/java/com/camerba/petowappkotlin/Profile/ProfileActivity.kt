@@ -14,12 +14,12 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        setupViewPager()
+      //  setupNavigationView()
     }
 
-    fun setupViewPager(){
+    fun setupNavigationView(){
 
-        ListHelper.setupNavigation(context = this, bubbleTabBar = BubbleTabBar(this))
+        ListHelper.setupNavigationView(context = this, bubbleTabBar = BubbleTabBar(this))
         var menu=BubbleTabBar.menu
         var menuItem=menu.getItem(ACTIVITY_NO)
         menuItem.setChecked(true)
