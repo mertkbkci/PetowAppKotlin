@@ -7,7 +7,7 @@
     tools:context=".Profile.ProfileActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgProfileSettings"
         android:layout_width="43dp"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"
@@ -21,9 +21,9 @@
         android:layout_width="40dp"
         android:layout_height="47dp"
         android:layout_marginEnd="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfileSettings"
+        app:layout_constraintEnd_toStartOf="@+id/imgProfileSettings"
+        app:layout_constraintTop_toTopOf="@+id/imgProfileSettings"
         app:srcCompat="@drawable/ic_discover_people" />
 
     <TextView
@@ -35,9 +35,9 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfileSettings"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/imgProfileSettings" />
 
     <TextView
         android:id="@+id/textView6"
@@ -129,7 +129,7 @@
         android:background="@color/golgelik"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imgProfileSettings">
 
     </View>
 
