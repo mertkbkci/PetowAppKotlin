@@ -19,7 +19,9 @@ class ProfileSettingsActivity : AppCompatActivity() {
 
     private fun fragmentNavigations() {
         tvProfiliDuzenleHesapAyarlari.setOnClickListener {
-
+         var transaction=supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.profileSettingContainer, ProfileEditFragment())
+            transaction.commit()
         }
     }
 
