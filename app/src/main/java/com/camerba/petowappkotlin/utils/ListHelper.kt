@@ -17,23 +17,23 @@ class ListHelper {
 
             bubbleTabBar.addBubbleListener(object : OnBubbleClickListener {
                 override fun onBubbleClick(id: Int) {
-               when(id.toInt){
+               when(id.and(Int)){
 
                    R.id.ic_home ->{
 
-                       val intent:Intent(context, HomeActivity::class.java)
+                       val intent:Intent(context, HomeActivity::class.java).addFlags(Intent.FLAG.ACTİVİTY_NO_ANİMATİON)
                        context.startActivity(intent)
                        return true
                    }
                    R.id.ic_search ->{
 
-                       val intent:Intent(context, SearchActivity::class.java)
+                       val intent:Intent(context, SearchActivity::class.java).addFlags(Intent.FLAG.ACTİVİTY_NO_ANİMATİON)
                        context.startActivity(intent)
                        return true
                    }
                    R.id.ic_profile ->{
 
-                       val intent:Intent(context, ProfileActivity::class.java)
+                       val intent:Intent(context, ProfileActivity::class.java).addFlags(Intent.FLAG.ACTİVİTY_NO_ANİMATİON)
                        context.startActivity(intent)
                        return true
                    }

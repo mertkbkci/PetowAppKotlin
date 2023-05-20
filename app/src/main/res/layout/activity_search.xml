@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".Search.SearchActivity">
 
+    <io.ak1.BubbleTabBar
+        android:id="@+id/bubbleTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        android:padding="15dp"
+        app:bubbletab_icon_size="30dp"
+        app:bubbletab_menuResource="@menu/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </io.ak1.BubbleTabBar>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
