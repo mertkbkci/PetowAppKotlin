@@ -152,4 +152,15 @@
 
     </io.ak1.BubbleTabBar>
 
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Profili düzenle"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_image" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
