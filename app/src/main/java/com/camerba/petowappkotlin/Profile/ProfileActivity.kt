@@ -14,7 +14,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-      //  setupNavigationView()
+        setupNavigationView()
     }
 
     fun setupNavigationView(){
