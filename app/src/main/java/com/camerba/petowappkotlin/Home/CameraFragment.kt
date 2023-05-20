@@ -9,7 +9,7 @@ import com.camerba.petowappkotlin.R
 
 class CameraFragment : Fragment(){
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        var view=inflater?.inflate(R.layout.fragment_camera, container, false)
+        val view=inflater?.inflate(R.layout.fragment_camera, container, false)
         return view
     }
 }
