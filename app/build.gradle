@@ -45,6 +45,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     //implementation project(path: ':bubbletabbar')
     implementation 'io.ak1:bubbletabbar:1.0.8'
-
+   //circle image view
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //universal image loader
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 }

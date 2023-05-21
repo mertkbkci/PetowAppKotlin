@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.camerba.petowappkotlin.R
 import com.camerba.petowappkotlin.utils.ListHelper
 import io.ak1.BubbleTabBar
@@ -25,6 +26,15 @@ class ProfileActivity : AppCompatActivity() {
          var intent=Intent(this,ProfileSettingsActivity::class.java)
          startActivity(intent)
      }
+
+        tvProfilDuzenleButon.setOnClickListener {
+            profileRoot.visibility=View.GONE
+            var transaction=supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.profileContainer, ProfileEditFragment())
+            transaction.addToBackStack("editProfileFragmentEklendi")
+            transaction.commit()
+
+        }
     }
 
     fun setupNavigationView(){
@@ -35,5 +45,8 @@ class ProfileActivity : AppCompatActivity() {
         menuItem.setChecked(true)
     }
 
-
+    override fun onBackPressed() {
+        profileRoot.visibility=View.VISIBLE
+        super.onBackPressed()
+    }
 }
