@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "250829587387",
+    "project_id": "kotlinpetowapp",
+    "storage_bucket": "kotlinpetowapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250829587387:android:074e41391381fa8873fa9e",
+        "android_client_info": {
+          "package_name": "com.camerba.petowappkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250829587387-cd2bcnnvauq46fov2dkf2djd6igtm2uh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1f7XNlOsia8YPDVGkP1BVD6c3WavVJhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250829587387-cd2bcnnvauq46fov2dkf2djd6igtm2uh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
