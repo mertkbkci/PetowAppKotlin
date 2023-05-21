@@ -30,7 +30,7 @@ class ProfileEditFragment : Fragment() {
        val view=inflater.inflate(R.layout.fragment_profile_edit, container, false)
 
         circleProfileImageFragment=view.findViewById(R.id.circleProfileImage)
-        initImageLoader()
+
         setupProfilePicture()
 
 
@@ -46,17 +46,12 @@ class ProfileEditFragment : Fragment() {
 
     }
 
-    private fun initImageLoader(){
 
-        var universalImageLoader=UniversalImageLoader(activity)
-        ImageLoader.getInstance().init(universalImageLoader.config)
-
-    }
 
     private fun setupProfilePicture(){
 
         //https://www.hizliresim.com/62qkwvy
-        var imgURL="www.hizliresim.com/62qkwvy"
+        var imgURL="i.hizliresim.com/62qkwvy.jfif"
         UniversalImageLoader.setImage(imgURL, circleProfileImageFragment,null,"https://")
     }
 

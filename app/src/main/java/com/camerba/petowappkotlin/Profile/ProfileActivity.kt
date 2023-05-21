@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import com.camerba.petowappkotlin.R
 import com.camerba.petowappkotlin.utils.ListHelper
+import com.camerba.petowappkotlin.utils.UniversalImageLoader
 import io.ak1.BubbleTabBar
 
 
@@ -17,8 +18,14 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+        setupProfilePhoto()
         setupToolbar()
         setupNavigationView()
+    }
+
+    private fun setupProfilePhoto() {
+        val imgURL:"i.hizliresim.com/62qkwvy.jfif"
+        UniversalImageLoader.setImage(imgURL,circleProfileImage,progressBar,"https://",)
     }
 
     private fun setupToolbar() {
@@ -46,7 +53,7 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        profileRoot.visibility=View.VISIBLE
+        findViewById(R.id.profileRoot).visibility=View.VISIBLE
         super.onBackPressed()
     }
 }

@@ -6,6 +6,8 @@ import android.os.Bundle
 import com.camerba.petowappkotlin.R
 import com.camerba.petowappkotlin.utils.HomePagerAdapter
 import com.camerba.petowappkotlin.utils.ListHelper
+import com.camerba.petowappkotlin.utils.UniversalImageLoader
+import com.nostra13.universalimageloader.core.ImageLoader
 import io.ak1.BubbleTabBar
 
 
@@ -15,6 +17,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        initImageLoader()
         setupNavigationView()
         setupHomeViewPager()
     }
@@ -39,5 +42,12 @@ class HomeActivity : AppCompatActivity() {
         homeViewPager.adapter=homePagerAdapter
        //viewpagerın home fragmenti ile başlamasını sağladık
         homeViewPager.setCurrentItem()
+    }
+
+    private fun initImageLoader(){
+
+        var universalImageLoader= UniversalImageLoader(this)
+        ImageLoader.getInstance().init(universalImageLoader.config)
+
     }
 }
