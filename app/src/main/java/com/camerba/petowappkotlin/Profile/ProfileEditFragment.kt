@@ -20,7 +20,7 @@ class ProfileEditFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    lateinit var circleProfileImage:CircleImageView
+    lateinit var circleProfileImageFragment:CircleImageView
 
 
 
@@ -29,13 +29,14 @@ class ProfileEditFragment : Fragment() {
 
        val view=inflater.inflate(R.layout.fragment_profile_edit, container, false)
 
-        circleProfileImage=view.circleProfileImage
+        circleProfileImageFragment=view.findViewById(R.id.circleProfileImage)
         initImageLoader()
         setupProfilePicture()
 
 
 
-        view.imgClose.setOnClickListener{
+
+        view.findViewById(R.id.imgClose).setOnClickListener{
 
             activity.onBackPressed()
         }
@@ -56,7 +57,7 @@ class ProfileEditFragment : Fragment() {
 
         //https://www.hizliresim.com/62qkwvy
         var imgURL="www.hizliresim.com/62qkwvy"
-        UniversalImageLoader.setImage(imgURL, circleProfileImage,null,"https://")
+        UniversalImageLoader.setImage(imgURL, circleProfileImageFragment,null,"https://")
     }
 
     companion object {
