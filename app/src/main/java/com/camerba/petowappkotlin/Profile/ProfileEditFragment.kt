@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.camerba.petowappkotlin.R
+import com.camerba.petowappkotlin.utils.UniversalImageLoader
+import com.nostra13.universalimageloader.core.ImageLoader
 
 
 private const val ARG_PARAM1 = "param1"
@@ -30,6 +32,10 @@ class ProfileEditFragment : Fragment() {
 
        val view=inflater.inflate(R.layout.fragment_profile_edit, container, false)
 
+        setupProfilePicture()
+
+
+
         view.imgClose.setOnClickListener{
 
             activity.onBackPressed()
@@ -38,6 +44,20 @@ class ProfileEditFragment : Fragment() {
         return view
 
 
+    }
+
+    private fun initImageLoader(){
+
+        var universalImageLoader=UniversalImageLoader(activity)
+        ImageLoader.getInstance().init(universalImageLoader.config)
+
+    }
+
+    private fun setupProfilePicture(){
+
+        //https://www.hizliresim.com/62qkwvy
+        var imgURL="www.hizliresim.com/62qkwvy"
+        UniversalImageLoader.setImage(imgURL, circleProfileImage,null,"https://")
     }
 
     companion object {

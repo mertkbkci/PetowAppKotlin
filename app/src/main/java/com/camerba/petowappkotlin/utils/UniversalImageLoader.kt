@@ -46,25 +46,30 @@ class UniversalImageLoader(val mContext:Context) {
             imageLoader.displayImage(ilkKisim+imgURL,imageView, object : ImageLoadingListener{
                 override fun onLoadingStarted(imageUri: String?, view: View?) {
 
-                }
-
-                override fun onLoadingFailed(
-                    imageUri: String?,
-                    view: View?,
-                    failReason: FailReason?
-                ) {
+                    if(mProgressBar!=null){
+                        mProgressBar.visibility=View.GONE
+                    }
 
                 }
 
-                override fun onLoadingComplete(
-                    imageUri: String?,
-                    view: View?,
-                    loadedImage: Bitmap?
-                ) {
+                override fun onLoadingFailed(imageUri: String?, view: View?, failReason: FailReason?) {
+
+                    if(mProgressBar!=null){
+                        mProgressBar.visibility=View.VISIBLE
+                    }
+                }
+
+                override fun onLoadingComplete(imageUri: String?, view: View?, loadedImage: Bitmap?) {
+                    if(mProgressBar!=null){
+                        mProgressBar.visibility=View.GONE
+                    }
 
                 }
 
                 override fun onLoadingCancelled(imageUri: String?, view: View?) {
+                    if(mProgressBar!=null){
+                        mProgressBar.visibility=View.GONE
+                    }
 
                 }
 
