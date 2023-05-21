@@ -10,6 +10,8 @@ import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.camerba.petowappkotlin.R
+import com.camerba.petowappkotlin.utils.EventbusDataEvents
+import org.greenrobot.eventbus.EventBus
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -76,6 +78,7 @@ class RegisterActivity : AppCompatActivity() {
                        transaction.replace(R.id.loginContainer,TelefonKoduGirFragment)
                        transaction.addToBackStack("telefonKoduGirFragmentEklendi")
                        transaction.commit()
+                       EventBus.getDefault().postSticky(EventbusDataEvents.TelefonNoGonder(etGirisYontemi.text.toString()))
 
 
                    }else{
