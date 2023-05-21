@@ -10,4 +10,5 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="mavi">#3997f0</color>
+    <color name="colorAccent">#3997f0</color>
 </resources>
