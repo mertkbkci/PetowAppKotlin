@@ -88,6 +88,7 @@ class RegisterActivity : AppCompatActivity() {
                        transaction.replace(R.id.loginContainer,EmailGirisYontemiFragment)
                        transaction.addToBackStack("emailileGirisFragmentEklendi")
                        transaction.commit()
+                       EventBus.getDefault().postSticky(EventbusDataEvents.EmailGonder(etGirisYontemi.text.toString()))
                    }
 
                    }
