@@ -107,6 +107,7 @@
         android:background="@drawable/register_button"
         android:ems="10"
         android:text="İleri"
+        android:enabled="false"
         android:textAllCaps="false"
         android:textColor="@color/sonukmavi"
         android:textColorHighlight="@color/toolbar_color"
