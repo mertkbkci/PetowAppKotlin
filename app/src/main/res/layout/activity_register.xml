@@ -98,7 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/uzunGolgelik" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnIleri"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

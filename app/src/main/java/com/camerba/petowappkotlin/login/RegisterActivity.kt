@@ -1,11 +1,13 @@
 package com.camerba.petowappkotlin.login
 
+import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.InputType
 import android.text.TextWatcher
 import android.view.View
+import androidx.core.content.ContextCompat
 import com.camerba.petowappkotlin.R
 
 class RegisterActivity : AppCompatActivity() {
@@ -42,6 +44,9 @@ class RegisterActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if (count >=10){
+                    btnIleri.isEnable=true
+                    btnIleri.setTextColor(ContextCompat.getColor(this@RegisterActivity,R.color.white))
+                    btnIleri.setBackgroundColor(ContextCompat.getColor(this@RegisterActivity,R.color.mavi))
 
                 }
             }
