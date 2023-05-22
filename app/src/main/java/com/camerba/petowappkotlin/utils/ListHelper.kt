@@ -16,8 +16,9 @@ class ListHelper {
         fun setupNavigationView(context: Context, bubbleTabBar: BubbleTabBar) {
 
             bubbleTabBar.addBubbleListener(object : OnBubbleClickListener {
+               val item
                 override fun onBubbleClick(id: Int) {
-               when(id.and(Int)){
+               when(item.itemId){
 
                    R.id.ic_home ->{
 

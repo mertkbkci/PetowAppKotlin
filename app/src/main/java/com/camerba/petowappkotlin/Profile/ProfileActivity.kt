@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import com.camerba.petowappkotlin.R
 import com.camerba.petowappkotlin.utils.ListHelper
 import com.camerba.petowappkotlin.utils.UniversalImageLoader
@@ -25,23 +26,24 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun setupProfilePhoto() {
         val imgURL:"i.hizliresim.com/62qkwvy.jfif"
-        UniversalImageLoader.setImage(imgURL,circleProfileImage,progressBar,"https://",)
+        UniversalImageLoader.setImage(imgURL,"circleProfileImage","progressBar","https://",)
     }
 
     private fun setupToolbar() {
-     imgProfileSettings.setOnClickListener{
+        imgProfileSettings.setOnClickListener{
          var intent=Intent(this,ProfileSettingsActivity::class.java)
          startActivity(intent)
      }
-
+        val tvProfilDuzenleButon = findViewById<Button>(R.id.tvProfilDuzenleButon)
         tvProfilDuzenleButon.setOnClickListener {
-            profileRoot.visibility=View.GONE
-            var transaction=supportFragmentManager.beginTransaction()
+            profilRoot.visibility = View.GONE
+            val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.profileContainer, ProfileEditFragment())
             transaction.addToBackStack("editProfileFragmentEklendi")
             transaction.commit()
-
         }
+
+
     }
 
     fun setupNavigationView(){
@@ -53,7 +55,7 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        findViewById(R.id.profileRoot).visibility=View.VISIBLE
+        findViewById(id.profileRoot).visibility=View.VISIBLE
         super.onBackPressed()
     }
 }
